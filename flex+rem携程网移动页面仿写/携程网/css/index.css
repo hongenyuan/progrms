@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Linearicons-Free';
+    src: url('../fonts/Linearicons-Free.eot?idfumy');
+    src: url('../fonts/Linearicons-Free.eot?idfumy#iefix') format('embedded-opentype'),
+        url('../fonts/Linearicons-Free.ttf?idfumy') format('truetype'),
+        url('../fonts/Linearicons-Free.woff?idfumy') format('woff'),
+        url('../fonts/Linearicons-Free.svg?idfumy#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    margin: 0 auto;
+    height: 1000px;
+    max-width: 540px;
+    min-width: 320px;
+    font-family: Tahoma, Lucida Grande, Verdana, Microsoft Yahei, STXihei, hei;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #333;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.top {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background-color: beige;
+    border-radius: 50%;
+    top: 50%;
+    right: 0;
+}
+
+.top::before {
+    margin-left: 6px;
+    content: '\ea33';
+    font-family: 'Linearicons-Free';
+
+}
+
+.search_index {
+    overflow: hidden;
+    display: flex;
+    z-index: 99;
+    overflow: hidden;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    transform: translateX(-50%);
+    height: 40px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.search {
+    position: relative;
+    flex: 1;
+    margin: 1px 3px;
+    padding-left: 28px;
+    height: 35px;
+    line-height: 33px;
+    color: #666;
+    font-size: 14px;
+    border-radius: 17px;
+    border: 1px solid #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .6);
+
+}
+
+.search::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    width: 18px;
+    height: 15px;
+    background: url(../images/jinglingtu.png) no-repeat -81px 0;
+    background-size: 200px;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    color: #000;
+    font-size: 12px;
+}
+
+.user::before {
+    display: block;
+    margin: 3px 0 0 3px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: url(../images/yuanquan.jpg) no-repeat;
+    background-size: 20px;
+}
+
+/* 焦点图 */
+.focus {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.focus img {
+    width: 100%;
+
+}
+
+.focus ul {
+    margin-left: -100%;
+    width: 500%;
+    overflow: hidden;
+}
+
+.focus ul li {
+    width: 20%;
+    float: left;
+}
+
+.circle {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    margin: 0;
+}
+
+.circle li {
+    float: left;
+    margin-right: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: beige;
+    border-radius: 50%;
+}
+
+.circle .current {
+    width: 15px;
+    transition: all .3s;
+}
+
+.local_nav {
+    height: 80px;
+    /* margin: 0 3px; */
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.local_nav ul {
+    display: flex;
+}
+
+.local_nav ul li {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.local_nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.local_nav ul li a::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: url(../images/精灵图2.png) no-repeat -5px -89px;
+    background-size: 42px;
+}
+
+.banner {
+    margin: 0 3px;
+    overflow: hidden;
+    height: 330px;
+    border-radius: 16px;
+}
+
+.banner_nav {
+    display: flex;
+    height: 110px;
+    background: -webkit-linear-gradient(left, skyblue, orange);
+}
+
+.banner_nav:nth-child(2) {
+    margin: 3px 0;
+}
+
+.banner_local:nth-child(-n+2) {
+    border-right: 1px solid #f4f4f4;
+}
+
+.banner_local {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_local a {
+    flex: 1;
+    color: #f4f4f4;
+    text-align: center;
+    line-height: 55px;
+    font-size: 14px;
+}
+
+.banner_local a:nth-child(1) {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.banner_local:nth-child(1) a {
+    border-bottom: none;
+    line-height: 108px;
+}

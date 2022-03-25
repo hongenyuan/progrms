@@ -1,0 +1,42 @@
+.clearfix::after {
+
+    content: "";
+
+    display: block;
+
+    clear: both;
+
+    height: 0;
+
+    visibility: hidden;
+
+}
+
+.miaosha {
+    position: absolute;
+    top: 30px;
+    left: 188px;
+    padding: 3px 0 0 10px;
+    border-left: solid 1px #c81523;
+}
+
+.phone {
+    padding-bottom: 50px;
+}
+
+.phone_hd {
+    width: 1200px;
+    height: 150px;
+    background: url(../upload/images/nav.jpg) no-repeat;
+}
+
+.phones ul li {
+    float: left;
+    height: 459px;
+    width: 300px;
+    border: 1px solid transparent;
+}
+
+.phones ul li:hover {
+    border: 1px solid #c81523;
+}
